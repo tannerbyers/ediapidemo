@@ -10,7 +10,7 @@ const SearchPage = (props) => {
 
   const fetchData = async (query = null) => {
     return await fetch(
-      `http://healthcarecodesetapi.herokuapp.com/codes/${query}`
+      `https://healthcarecodesetapi.herokuapp.com/codes/${query}`
     )
       .then((response) => response.json())
       .then((data) => {
