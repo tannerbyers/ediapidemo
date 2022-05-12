@@ -18,8 +18,9 @@ const CodeList = ({ codeList = [] }) => {
                 {value.longDescription}{" "}
                 <p>
                   <span style={{ color: "#577399" }}>
-                    Effective Date : {value.effDate} <span style={{color: "black"}}> | </span> Termination Date :{" "}
-                    {(value.termDate = "Still active")}{" "}
+                    Effective Date : {value.effDate}{" "}
+                    <span style={{ color: "black" }}> | </span> Termination Date
+                    : {(value.termDate = "Still active")}{" "}
                   </span>
                 </p>
               </p>

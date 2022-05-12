@@ -1,14 +1,10 @@
 import React, { useState, useEffect } from "react";
 import SearchBar from "./SearchBar";
-import CodeList from "./CodeList";
 
 const SearchPage = (props) => {
   const [codeList, setCodeList] = useState([]);
-  const [defaultCodeList, setDefaultCodeList] = useState([]);
 
-  const [searchFilter, setSearchFilter] = useState("");
-
-  const fetchData = async (query = null) => {
+  const fetchData = async (query = "A") => {
     return await fetch(
       `https://healthcarecodesetapi.herokuapp.com/codes/${query}`
     )

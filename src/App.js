@@ -1,6 +1,6 @@
 import React from "react";
 import SearchPage from "./components/SearchPage.js";
-import './App.css';
+import "./App.css";
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
         backgroundColor: "#F7F7FF",
         display: "flex",
         justifyContent: "center",
-        height: "100vh"
+        height: "100vh",
       }}
     >
       <SearchPage />
